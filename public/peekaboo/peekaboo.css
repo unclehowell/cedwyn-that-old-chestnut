@@ -67,3 +67,14 @@ html[data-ghf-mode="night"] a.pk-tag.pk-tag-wayback,html[data-ghf-mode="night"] 
 html[data-ghf-mode="night"] a.pk-tag.pk-tag-oldchestnut,html[data-ghf-mode="night"] a.pk-tag.pk-tag-oldchestnut:visited{color:#f6dcc0!important}
 html[data-ghf-mode="night"] a.pk-tag.pk-tag-watchtower,html[data-ghf-mode="night"] a.pk-tag.pk-tag-watchtower:visited{color:#c9f0d4!important}
 html[data-ghf-mode="night"] a.pk-tag.pk-tag-dartboard,html[data-ghf-mode="night"] a.pk-tag.pk-tag-dartboard:visited{color:#ffd3d3!important}
+
+/* v0.3.0 (11 Nov 2026): one-glance dashboard (dashboard.css/.js kit). The full text stays in .pk-full, reachable from the (i)
+   modals and the "Text view" switch; without JS the page reads as before. — Cedwyn editors */
+body.pk{--cwd-bg:var(--pk-bg);--cwd-card:var(--pk-card);--cwd-ink:var(--pk-ink);--cwd-mut:var(--pk-mut);--cwd-line:var(--pk-line);--cwd-acc:var(--pk-acc);--cwd-soft:var(--pk-said)}
+html.cwd-on .pk-full{display:none}
+.pk-head h1+.pk-kicker{margin-bottom:.3rem}
+.pk-textview{font:inherit;font-size:.85rem;padding:.35rem .8rem;border-radius:999px;border:1px solid var(--pk-acc);background:none;color:var(--pk-acc);cursor:pointer}
+.cwd-mb .pk-card{border:0;padding:0;margin:0 0 .6rem;background:none}
+.cwd-mb .pk-notice{border:0;padding:0;margin:0;background:none}
+.cwd-mb .pk-notice summary{cursor:default;padding:0 0 .4rem}.cwd-mb .pk-notice summary::before{content:none}
+.cwd-mb .pk-lede,.cwd-mb .pk-scope{margin:0 0 .7rem}
