@@ -1,9 +1,9 @@
 /* Peekaboo v0.3.0 (11 Nov 2026) - Cedwyn editors.
    The page is server-rendered from data/peekaboo.json by tools/peekaboo_sync.py. This script adds the header's "47 of 59"
    until the area registry carries slot 47, the changelog modal and WebMCP tools for agents, and (v0.3.0) builds the
-   one-glance dashboard from data/peekaboo.json and data/notices.json with the shared kit in dashboard.js: KPI tiles, a gauge,
-   a donut, bars, a timeline and record/notice lists, each with an (i) that opens the full text. The server-rendered text stays
-   in the page (.pk-full) for no-JS readers and the "Text view" switch; nothing is removed. */
+   "At a glance" strip (folded under the introduction) from data/peekaboo.json and data/notices.json with the shared kit in
+   dashboard.js: KPI tiles, a gauge, a donut, bars, a timeline and record/notice lists, each with an (i) that opens the detail.
+   The text of the page stays primary and fully visible; the strip is a secondary summary. Without JS the strip stays hidden. */
 (function(){
 var d=document,NAME="Peekaboo",SLOT="47",OF="59",WORD={en:"of",cy:"o",es:"de"};
 function lg(){var l=(d.documentElement.getAttribute("lang")||"en").slice(0,2).toLowerCase();return WORD[l]?l:"en";}
@@ -53,8 +53,8 @@ if(mc&&typeof mc.registerTool==="function"){try{
 })();
 
 (function(){
-var d=document,h=d.documentElement,D=window.CwDash,root=d.getElementById("pk-dash");
-function off(){h.classList.remove("cwd-on");if(root)root.hidden=true;}
+var d=document,D=window.CwDash,root=d.getElementById("pk-dash"),box=d.getElementById("pk-glance");
+function off(){if(box)box.hidden=true;}
 if(!D||!root||!window.fetch||!window.Promise){off();return;}
 function j(u){return fetch(u,{cache:"no-cache"}).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json();});}
 var el=D.el,CAT={"Not held, then found":"Not held","Outside scope, then found":"Outside scope","Catalogue description does not match the item":"Wrong description","Catalogue corrected by the holder":"Corrected"};
@@ -75,8 +75,7 @@ function build(db,nt){
  var E=(db.entries||[]).slice().sort(function(a,b){return (b.found_on||"").localeCompare(a.found_on||"");}),N=(nt.notices||[]),C=db.counts||{};
  var tot=E.length,us=E.filter(function(e){return e.found_by==="us";}),hol=E.filter(function(e){return e.found_by!=="us";});
  root.textContent="";
- var about=function(){var b=el("button",{type:"button","class":"pk-textview"},["Text view (whole page)"]);b.addEventListener("click",function(){D.close();h.classList.remove("cwd-on");root.hidden=true;var t=d.querySelector(".pk-head");if(t)t.scrollIntoView();});
-  return frag([clone(".pk-lede"),clone(".pk-scope"),clone(".pk-legend"),clone(".pk-how p"),el("p",null,[b])]);};
+ var about=function(){return frag([clone(".pk-lede"),clone(".pk-scope"),clone(".pk-legend"),clone(".pk-how p")]);};
  root.appendChild(el("div",{"class":"cwd-bar"},[el("span",{"class":"cwd-chip",text:"Synced "+D.fdate(db.synced_at,1)}),el("span",{"class":"cwd-chip"},["About this page ",D.info("pk-about","About Peekaboo",about)])]));
  var k=el("div",{"class":"cwd-kpis"});
  k.appendChild(D.tile({value:tot,label:"Records found",tone:4,info:"pk-k-all",detail:function(){return frag([clone(".pk-stats"),"Records that turned up where a catalogue, a label or a reply said they were not.",recList(E)]);}}));
@@ -100,11 +99,8 @@ function build(db,nt){
   body:D.rows({rows:E.map(function(e){return {text:D.fdate(e.found_on,1)+" \u00b7 "+short(e.holder),tag:cat(e.category),tone:by(e),info:"pk-r-"+String(e.id).toLowerCase(),title:e.title,detail:function(){return recNode(e);}};})})}));
  g.appendChild(D.card({title:"Correction notices",wide:true,info:"pk-c-notes",detail:function(){return frag([clone(".pk-notices .pk-note")]);},
   body:D.rows({rows:N.map(function(x){return {text:x.id+" \u00b7 "+short(x.to),tag:"Held",tone:2,info:"pk-n-"+x.id.toLowerCase(),title:x.id+" \u00b7 "+x.to,detail:function(){return noteNode(x);}};})})}));
- root.appendChild(g);root.hidden=false;
- openHash((location.hash||"").slice(1));
+ root.appendChild(g);if(box)box.hidden=false;
 }
-function openHash(hash,op){if(!hash||hash==="pk-changelog"||!/^(pk-|notice-)/.test(hash))return false;var id=hash.indexOf("notice-")===0?"pk-n-"+hash.slice(7).toLowerCase():"pk-r-"+hash.slice(3);return D.open(id,op)||D.open(hash,op);}
-d.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest('a[href^="#pk-"],a[href^="#notice-"]');if(!a||root.hidden||a.hasAttribute("data-pk-info"))return;if(openHash(a.getAttribute("href").slice(1),a))ev.preventDefault();});
-window.addEventListener("hashchange",function(){if(!root.hidden)openHash((location.hash||"").slice(1));});
+d.addEventListener("click",function(ev){if(ev.target.closest&&ev.target.closest('.cwd-modal a[href^="#"]'))D.close();});
 Promise.all([j("data/peekaboo.json"),j("data/notices.json")]).then(function(a){build(a[0],a[1]);}).catch(function(){off();});
 })();
