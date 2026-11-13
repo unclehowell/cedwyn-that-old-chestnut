@@ -20,7 +20,7 @@ Without --main the four main files are read from raw.githubusercontent.com (uncl
 import json, re, sys, pathlib, datetime, urllib.request, argparse
 
 APP, SLOT, OF = "that-old-chestnut", 37, 59
-REPO_RAW = "https://raw.githubusercontent.com/unclehowell/cedwyn/main/"
+REPO_RAW = "https://raw.githubusercontent.com/unclehowell/bucklerfamily-estate/main/"
 BANNED = re.compile(r"\b(says|claims|according to|hearsay|unverified|alleged|fraud\w*|stolen|tenant farmers?)\b", re.I)
 PRIVATE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+|(?:\+44\s?7|\b07)\d{3}\s?\d{3}\s?\d{3}\b|(?i:api[_-]?key|secret|token)\s*[:=]")
 TITLED = re.compile(r"\b(?:Mr|Mrs|Ms|Miss|Dr|Prof)\.?\s+[A-Z][a-z]+")
