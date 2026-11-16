@@ -32,7 +32,7 @@ python3 tools/chestnut_sync.py --audit <dir with chestnuts.json> --out <checkout
 ```
 
 ## Display
-Counts (clear flips / borderline / wording only), filters (institution, type, trigger, free text), one card per reply,
+Counts (later records located / partial or limited response / wording only), filters (institution, type, trigger, free text), one card per reply,
 the full table with the five requested columns, the chestnut words with the statute each points at, and a reference
 glossary of refusal grounds. Labels in en / cy / es follow `<html lang>` (the site default is unchanged). Respects
 `prefers-reduced-motion` (static arm, read blips shown as chestnuts). Checked at 390 px: no sideways scroll.
