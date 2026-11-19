@@ -1,0 +1,13 @@
+{
+ "note": "Reply dates for entries that read 'reply of date not yet read', each checked against the reply in the mailbox on 19 Nov 2026 (Claude seat, flywheel run). Apply to public/_db/view.json (and the central catalogue, if these rows come from it) with tools/apply_reply_dates.py. Sets title, date, provenance.date and finding.negative_date only; quotes, statutes and classes are not touched. Entries not listed here (TOC-L08 to L12, L14 to L17) stay undated until their messages are read.",
+ "dates": {
+  "TOC-L01": {"date": "2026-10-29", "source": "Heneb HER team reply of 29 Oct 2026 13:22 UTC to the 19 Oct request, item 4 (Gmail message 1a187d3861d452a8)"},
+  "TOC-L02": {"date": "2026-10-29", "source": "same reply, item 2 (Gmail message 1a187d3861d452a8)"},
+  "TOC-L03": {"date": "2026-10-28", "source": "Heneb written response of 28 Oct 2026 08:43 UTC to the complaint of 27 Sep 2026, points 1-4 (Gmail message 1a181ade960954f0)"},
+  "TOC-L04": {"date": "2026-10-28", "source": "same response, point 5 (Gmail message 1a181ade960954f0)"},
+  "TOC-L05": {"date": "2026-10-28", "source": "same response, point 10 (Gmail message 1a181ade960954f0)"},
+  "TOC-L06": {"date": "2026-10-28", "source": "same response, point 9 (Gmail message 1a181ade960954f0)"},
+  "TOC-L07": {"date": "2026-10-28", "source": "same response, point 6 (Gmail message 1a181ade960954f0)"},
+  "TOC-L13": {"date": "2026-08-24", "source": "Cardiff Civil Justice Centre, enforcement section, reply of 24 Aug 2026 14:02 UTC, point 2 (Gmail message 1a0341444f5bf89d)"}
+ }
+}
