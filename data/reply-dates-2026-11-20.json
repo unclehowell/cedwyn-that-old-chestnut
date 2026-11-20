@@ -1,0 +1,13 @@
+{
+ "note": "Second batch of reply dates for That Old Chestnut entries that read 'reply of date not yet read', each matched to the reply in the mailbox on 20 Nov 2026 by searching the entry's own quoted wording (Claude seat, flywheel run). Apply with tools/apply_reply_dates.py. Sets title, date, provenance.date and finding.negative_date only; quotes, statutes and classes are not touched. TOC-L09 is left undated: its quoted sentence was not found in any message body read (Cadw 14 Aug and 27 Aug 2026 checked; the July ATISN 27021 thread not yet read).",
+ "dates": {
+  "TOC-L08": {"date": "2026-10-19", "source": "Welsh Government (Dr Andy Wigley) cover email of 19 Oct 2026 13:26 UTC, 'Please see attached response' (Gmail message 1a154577a09c3329). The s.14(2) wording is in the attached letter; the date is the email's, the letter's own date not checked."},
+  "TOC-L10": {"date": "2026-03-12", "source": "HMLR FOI team reply of 12 Mar 2026 12:21 UTC, F260213 (Gmail message 19ce1fe9eccc997b). Wording matches the entry except the salutation, which reads 'Dear Sion Buckler', not 'Dear Requester'; reviewer may wish to correct the quote."},
+  "TOC-L11": {"date": "2026-04-13", "source": "HMLR FOI response F260213 of 13 Apr 2026 09:57 UTC, response attached (Gmail message 19d8646886b25a87); date agrees with the entry's own note 'the 13 Apr reply'."},
+  "TOC-L12": {"date": "2026-08-12", "source": "First of the automated HMLR Central replies, ref 260812-6561894, 12 Aug 2026 08:07 UTC (Gmail message 19ff502babd77740); repeated 17 Sep 2026 (refs 260917-6714794, 260917-6714796)."},
+  "TOC-L14": {"date": "2026-09-30", "source": "Glamorgan Archives reply ref 2026/4097b, 30 Sep 2026 15:31 UTC (Gmail message 1a0f2f0f54a36630)."},
+  "TOC-L15": {"date": "2026-02-05", "source": "PACAC automated reply of 5 Feb 2026 15:54 UTC (Gmail message 19c2e82f1ff07613); quoted sentence read in the body. The earlier PACAC auto-reply of 31 Jan 2026 does not contain it."},
+  "TOC-L16": {"date": "2025-11-17", "source": "RCAHMW NMR Enquiries automatic acknowledgement of 17 Nov 2025 14:09 UTC (Gmail message 19a9226114385268); quoted sentence read in the body. The same standard text recurs in the acknowledgement of 22 May 2026."},
+  "TOC-L17": {"date": "2026-06-14", "source": "Llandough Community Council clerk's FOI reply of 14 Jun 2026 16:04 UTC to the request of 18 May 2026 (Gmail message 19ec6e0894a49c27)."}
+ }
+}
