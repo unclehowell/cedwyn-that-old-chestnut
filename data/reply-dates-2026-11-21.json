@@ -1,0 +1,6 @@
+{
+ "note": "Reply date for the last entry that read 'reply of date not yet read', checked against the mailbox on 21 Nov 2026 (Claude seat, flywheel run). Apply after reply-dates-2026-11-19.json and reply-dates-2026-11-20.json with tools/apply_reply_dates.py. Sets title, date, provenance.date and finding.negative_date only; quotes, statutes and classes are not touched.",
+ "dates": {
+  "TOC-L09": {"date": "2026-07-29", "source": "Cadw (Welsh Government), internal-review case officer, reply of 29 Jul 2026 12:10 UTC in the 'REVIEW of EOI ATISN 27021' thread: 'I can confirm that all records were checked for the information you requested and we hold no further information or a record of the destruction.' (Gmail message 19fadc8628eb9d17). An earlier reply in the same thread, 10 Jul 2026 (message 19f4be37a086c06e), says 'No destruction record exists.'"}
+ }
+}
