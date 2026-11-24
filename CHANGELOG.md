@@ -23,3 +23,8 @@
 ## 24 November 2026 — freshness and interpretation safeguard
 - v0.3.9 clarifies in the live status line that the latest-mail supplement is a static extract through its stated read-through date, not a live inbox or deadline monitor.
 - Pattern flags remain source-check prompts, not findings of motive, concealment, statutory breach or wrongdoing. Verify the complete request/reply thread and later underlying record before classifying an apparent later disclosure.
+
+
+## 0.6.1 — 24 November 2026
+- The live status line now labels the mailbox supplement as a static extract through its stated read-through date, warns that later correspondence may be missing, and says this is not a live inbox or deadline monitor.
+- The visible warning states that pattern flags prompt source checking and are not findings of motive or wrongdoing (English, Welsh and Spanish).
