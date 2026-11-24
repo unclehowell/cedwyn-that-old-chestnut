@@ -65,3 +65,8 @@ Another kind of old chestnut: a direct question from the Executive left unanswer
 Role titles only, no individual officers; neutral labels; internal links only; the public gate in `tools/views.py`
 applies to everything published.
 
+
+
+## Freshness and interpretation safeguard (24 November 2026)
+
+This application is a static, curated extract, not a live mailbox or current deadline monitor. The latest-mail supplement explicitly states its own read-through date; do not infer that later correspondence has been checked. Before describing an initial reply as an old chestnut, verify the complete original request and reply thread, all relevant attachments, later correspondence, the actual record and the recipient's current policy. A later record is not necessarily the same record originally requested. Pattern detection and highlighted wording are discovery prompts, not findings of motive, deliberate withholding, statutory breach or misconduct. Distinguish a genuine later disclosure from a separate record, a different scope, a transfer, a newly located copy or a record that was never created.
