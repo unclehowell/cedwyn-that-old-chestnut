@@ -1,303 +1,306 @@
 {
- "app": "that-old-chestnut",
- "version": "0.1.0",
- "enabled": true,
- "schema": "cedwyn-view/0.1.0",
- "note": "That Old Chestnut (webapp 37 of 59): FOI / EIR / SAR replies about Great House Farm / Tŷ Mawr read for refusal-setup wording and for 'not held' answers that later turned into records found. Derived by tools/views.py from data/core at every build; written by tools/chestnut_sync.py on the that-old-chestnut branch; never edit the output by hand.",
- "collections": {
-  "chestnuts": {
-   "select": {
-    "kind": [
-     "foi_finding"
-    ]
-   },
-   "order_by": "id",
-   "project": [
-    "id",
-    "title",
-    "date",
-    "provenance",
-    "evidence",
-    "finding",
-    "updated"
-   ]
-  },
-  "places": {
-   "select": {
-    "kind": [
-     "place"
-    ],
-    "where": [
-     {
-      "field": "id",
-      "op": "in",
-      "value": [
-       "PL-TY-MAWR"
+  "app": "that-old-chestnut",
+  "version": "0.1.0",
+  "enabled": true,
+  "schema": "cedwyn-view/0.1.0",
+  "note": "That Old Chestnut (webapp 37 of 59): FOI / EIR / SAR replies about Great House Farm / Tŷ Mawr read for refusal-setup wording and for 'not held' answers that later turned into records found. Derived by tools/views.py from data/core at every build; written by tools/chestnut_sync.py on the that-old-chestnut branch; never edit the output by hand.",
+  "collections": {
+    "chestnuts": {
+      "select": {
+        "kind": [
+          "foi_finding"
+        ]
+      },
+      "order_by": "id",
+      "project": [
+        "id",
+        "title",
+        "date",
+        "provenance",
+        "evidence",
+        "finding",
+        "updated"
       ]
-     }
-    ]
-   },
-   "order_by": "id",
-   "project": [
-    "id",
-    "title",
-    "aliases",
-    "description",
-    "page"
-   ]
-  },
-  "parcel_evidence": {
-   "select": {
-    "kind": [
-     "evidence"
-    ],
-    "where": [
-     {
-      "field": "id",
-      "op": "in",
-      "value": [
-       "EV-0211",
-       "EV-0215",
-       "EV-0629",
-       "EV-0630",
-       "EV-0631"
+    },
+    "places": {
+      "select": {
+        "kind": [
+          "place"
+        ],
+        "where": [
+          {
+            "field": "id",
+            "op": "in",
+            "value": [
+              "PL-TY-MAWR"
+            ]
+          }
+        ]
+      },
+      "order_by": "id",
+      "project": [
+        "id",
+        "title",
+        "aliases",
+        "description",
+        "page"
       ]
-     }
-    ]
-   },
-   "order_by": "id",
-   "project": [
-    "id",
-    "title",
-    "page"
-   ]
+    },
+    "parcel_evidence": {
+      "select": {
+        "kind": [
+          "evidence"
+        ],
+        "where": [
+          {
+            "field": "id",
+            "op": "in",
+            "value": [
+              "EV-0211",
+              "EV-0215",
+              "EV-0629",
+              "EV-0630",
+              "EV-0631"
+            ]
+          }
+        ]
+      },
+      "order_by": "id",
+      "project": [
+        "id",
+        "title",
+        "page"
+      ]
+    }
+  },
+  "pages": [],
+  "evidence_links": "/research/evidence/",
+  "copy": {
+    "title": "That Old Chestnut · FOI and EIR replies · Cedwyn",
+    "description": "FOI and EIR replies about Great House Farm / Tŷ Mawr. The register records wording about request scope, searches, refusal grounds and later disclosures, with reply dates and statutory references.",
+    "i18n": {
+      "en": {
+        "h1": "That Old Chestnut",
+        "kicker": "FOI and EIR replies about Great House Farm / Tŷ Mawr",
+        "lede": "This register records FOI and EIR replies about Great House Farm / Tŷ Mawr from 2025 onwards. Entries identify wording about the scope of a request, searches, refusal grounds and later disclosures. Each entry gives the relevant quotation, reply date and statutory provision cited or relevant.",
+        "counts": "Cases by category",
+        "clear": "Later records located",
+        "clear_d": "An initial 'not held' response was followed by the identification or disclosure of records.",
+        "borderline": "Partial or limited response",
+        "borderline_d": "Partial disclosure, material already public, or scope treated as narrower than requested.",
+        "language": "Wording only",
+        "language_d": "Wording examined without a later record location or disclosure recorded.",
+        "filters": "Filter entries",
+        "institution": "Public body",
+        "class": "Category",
+        "trigger": "Earlier reply or event",
+        "all": "All entries",
+        "search": "Search replies",
+        "cards": "Individual replies",
+        "table": "Comparison table",
+        "terms": "Terms quoted and provisions cited",
+        "glossary": "Legal reference: refusal grounds",
+        "empty": "No entries are displayed until the correspondence thread has been checked in full.",
+        "in_progress": "This register is incomplete; further correspondence remains to be reviewed.",
+        "open": "Correspondence still open",
+        "neg": "Initial reply",
+        "pos": "Later reply",
+        "terms_used": "Terms quoted",
+        "statute": "Statutory provision",
+        "none": "No matching entries",
+        "held": "Quote omitted pending review",
+        "radar": "Replies are reviewed before being added to this register.",
+        "not_read": "not yet reviewed",
+        "unread": "Review complete. {n} recent messages have not yet been checked; they will be added if they change the register.",
+        "coverage": "Reviewed: {c} conversations, {m} messages and {r} replies received.",
+        "word_h": "Term of interest",
+        "not_cited": "The reply did not cite this provision, provide a cost or time estimate, or offer advice and assistance.",
+        "mail_to": "Static mailbox extract: replies received up to {d} are included; later correspondence may be missing. This is not a live inbox or deadline monitor. Pattern flags are prompts for source checking, not findings of motive or wrongdoing."
+      },
+      "cy": {
+        "h1": "Yr Hen Dric",
+        "kicker": "Atebion Rhyddid Gwybodaeth a Rheoliadau Gwybodaeth Amgylcheddol am Great House Farm / Tŷ Mawr",
+        "lede": "Mae'r gofrestr hon yn cofnodi atebion i geisiadau Rhyddid Gwybodaeth ac i geisiadau o dan y Rheoliadau Gwybodaeth Amgylcheddol am Great House Farm / Tŷ Mawr ers 2025. Mae'r cofnodion yn nodi geiriad am gwmpas cais, chwiliadau, seiliau gwrthod a datgeliadau diweddarach. Nodir y dyfyniad perthnasol, dyddiad yr ateb a'r ddarpariaeth statudol a ddyfynnwyd neu sy'n berthnasol ym mhob cofnod.",
+        "counts": "Achosion yn ôl categori",
+        "clear": "Cofnodion a leolwyd yn ddiweddarach",
+        "clear_d": "Dilynwyd ateb cychwynnol 'heb ei gadw' gan ganfod neu ddatgelu cofnodion.",
+        "borderline": "Ateb rhannol neu gyfyngedig",
+        "borderline_d": "Datgeliad rhannol, deunydd a oedd eisoes yn gyhoeddus, neu gwmpas a ddehonglwyd yn gulach na'r cais.",
+        "language": "Geiriad yn unig",
+        "language_d": "Geiriad a archwiliwyd heb gofnod o ganfod neu ddatgelu cofnodion yn ddiweddarach.",
+        "filters": "Hidlo cofnodion",
+        "institution": "Corff cyhoeddus",
+        "class": "Categori",
+        "trigger": "Ateb neu ddigwyddiad blaenorol",
+        "all": "Pob cofnod",
+        "search": "Chwilio'r atebion",
+        "cards": "Atebion unigol",
+        "table": "Tabl cymharu",
+        "terms": "Termau a ddyfynnwyd a darpariaethau a nodwyd",
+        "glossary": "Cyfeirnod cyfreithiol: seiliau gwrthod",
+        "empty": "Ni ddangosir cofnod nes bod yr edefyn gohebiaeth wedi'i wirio'n llawn.",
+        "in_progress": "Nid yw'r gofrestr hon yn gyflawn; mae gohebiaeth arall i'w hadolygu.",
+        "open": "Gohebiaeth yn dal ar agor",
+        "neg": "Ateb cychwynnol",
+        "pos": "Ateb diweddarach",
+        "terms_used": "Termau a ddyfynnwyd",
+        "statute": "Darpariaeth statudol",
+        "none": "Dim cofnodion cyfatebol",
+        "held": "Dyfyniad wedi'i hepgor hyd nes ei adolygu",
+        "radar": "Adolygir atebion cyn eu hychwanegu at y gofrestr hon.",
+        "not_read": "heb ei adolygu eto",
+        "unread": "Adolygiad wedi'i gwblhau. Nid yw {n} o negeseuon diweddar wedi'u gwirio eto; cânt eu hychwanegu os ydynt yn newid y gofrestr.",
+        "coverage": "Adolygwyd: {c} sgwrs, {m} neges a {r} ateb a dderbyniwyd.",
+        "word_h": "Term dan sylw",
+        "not_cited": "Ni ddyfynnodd yr ateb y ddarpariaeth hon, ni roddodd amcangyfrif o gost nac amser, ac ni chynigiodd gyngor a chymorth.",
+        "mail_to": "Detholiad blwch post sefydlog: cynhwysir atebion hyd at {d}; gall gohebiaeth ddiweddarach fod ar goll. Nid blwch post byw na monitor terfynau amser yw hwn. Awgrymiadau i wirio ffynonellau yw'r marciau patrwm, nid canfyddiadau am gymhelliad na chamwedd."
+      },
+      "es": {
+        "h1": "El truco de siempre",
+        "kicker": "Respuestas FOI y EIR sobre Great House Farm / Tŷ Mawr",
+        "lede": "Este registro reúne las respuestas a solicitudes FOI y EIR sobre Great House Farm / Tŷ Mawr desde 2025. Las entradas identifican el texto relativo al alcance de la solicitud, las búsquedas, los motivos de denegación y las divulgaciones posteriores. Cada entrada indica la cita pertinente, la fecha de respuesta y la disposición legal citada o aplicable.",
+        "counts": "Casos por categoría",
+        "clear": "Documentos localizados posteriormente",
+        "clear_d": "A una respuesta inicial de «no consta» le siguió la localización o divulgación de documentos.",
+        "borderline": "Respuesta parcial o limitada",
+        "borderline_d": "Divulgación parcial, material ya público o una interpretación del alcance más limitada que la solicitud.",
+        "language": "Solo el texto de la respuesta",
+        "language_d": "Se examina la redacción, sin que conste una localización o divulgación posterior de documentos.",
+        "filters": "Filtrar entradas",
+        "institution": "Organismo público",
+        "class": "Categoría",
+        "trigger": "Respuesta o hecho anterior",
+        "all": "Todas las entradas",
+        "search": "Buscar respuestas",
+        "cards": "Respuestas individuales",
+        "table": "Tabla comparativa",
+        "terms": "Términos citados y disposiciones mencionadas",
+        "glossary": "Referencia legal: motivos de denegación",
+        "empty": "No se muestra ninguna entrada hasta que se haya revisado por completo el hilo de correspondencia.",
+        "in_progress": "Este registro está incompleto; queda correspondencia por revisar.",
+        "open": "Correspondencia aún abierta",
+        "neg": "Respuesta inicial",
+        "pos": "Respuesta posterior",
+        "terms_used": "Términos citados",
+        "statute": "Disposición legal",
+        "none": "No hay entradas coincidentes",
+        "held": "Cita omitida hasta su revisión",
+        "radar": "Las respuestas se revisan antes de incorporarlas a este registro.",
+        "not_read": "aún sin revisar",
+        "unread": "Revisión completada. Quedan {n} mensajes recientes sin comprobar; se añadirán si modifican el registro.",
+        "coverage": "Revisado: {c} conversaciones, {m} mensajes y {r} respuestas recibidas.",
+        "word_h": "Término de interés",
+        "not_cited": "La respuesta no citó esta disposición, no facilitó una estimación de coste o tiempo ni ofreció asesoramiento y ayuda.",
+        "mail_to": "Extracto estático del correo: se incluyen las respuestas hasta {d}; puede faltar correspondencia posterior. No es una bandeja de entrada en directo ni un monitor de plazos. Las señales de patrones sirven para comprobar fuentes, no son conclusiones sobre motivos o irregularidades."
+      }
+    },
+    "columns": [
+      "Public body / recipient",
+      "Date of initial adverse reply",
+      "Time to later disclosure (months; requester emails / total later emails)",
+      "Material identified or disclosed later",
+      "Relevant features of the correspondence (delay, scope, searches, interpretation, refusal grounds or changes between replies)"
+    ],
+    "statutes": [
+      {
+        "terms": [
+          "vexatious",
+          "obsessive",
+          "harassing",
+          "grossly oppressive",
+          "disproportionate"
+        ],
+        "law": "Freedom of Information Act 2000, s.14(1)",
+        "what": "A public authority need not comply with a request that is vexatious (ICO guidance: dealing with vexatious requests)."
+      },
+      {
+        "terms": [
+          "repeated",
+          "identical or substantially similar",
+          "previously answered"
+        ],
+        "law": "Freedom of Information Act 2000, s.14(2)",
+        "what": "A repeated request need not be answered unless a reasonable interval has passed."
+      },
+      {
+        "terms": [
+          "manifestly unreasonable",
+          "onerous",
+          "burdensome",
+          "unreasonable diversion of resources"
+        ],
+        "law": "Environmental Information Regulations 2004, reg 12(4)(b)",
+        "what": "Environmental information may be withheld where the request is manifestly unreasonable, subject to the public interest test (ICO guidance: manifestly unreasonable requests)."
+      },
+      {
+        "terms": [
+          "appropriate limit",
+          "cost limit",
+          "18 hours",
+          "24 hours",
+          "exceed the cost"
+        ],
+        "law": "Freedom of Information Act 2000, s.12, with the Fees Regulations 2004",
+        "what": "No duty to comply where the estimated cost exceeds the appropriate limit (£450, about 18 hours, for local and other public bodies; £600 for central government)."
+      },
+      {
+        "terms": [
+          "not held",
+          "does not hold",
+          "no information",
+          "no records",
+          "nothing found"
+        ],
+        "law": "Freedom of Information Act 2000, s.1(1)(a); Environmental Information Regulations 2004, reg 12(4)(a)",
+        "what": "The authority states it does not hold the information. The search behind that answer must be reasonable and proportionate (ICO guidance on determining whether information is held)."
+      },
+      {
+        "terms": [
+          "too general",
+          "too wide",
+          "clarify",
+          "clarification"
+        ],
+        "law": "Freedom of Information Act 2000, s.1(3) and s.16; Environmental Information Regulations 2004, reg 9 and reg 12(4)(c)",
+        "what": "An authority may seek clarification; the 20 working day clock waits for it. The duty to give advice and assistance sits alongside."
+      },
+      {
+        "terms": [
+          "already published",
+          "reasonably accessible",
+          "publicly available",
+          "available elsewhere"
+        ],
+        "law": "Freedom of Information Act 2000, s.21; Environmental Information Regulations 2004, reg 6(1)(b)",
+        "what": "Information reasonably accessible by other means is exempt; the authority should say where."
+      },
+      {
+        "terms": [
+          "future publication",
+          "intended for publication"
+        ],
+        "law": "Freedom of Information Act 2000, s.22",
+        "what": "Information held with a view to future publication may be withheld."
+      },
+      {
+        "terms": [
+          "extension",
+          "complex and voluminous",
+          "40 working days"
+        ],
+        "law": "Environmental Information Regulations 2004, reg 7(1)",
+        "what": "The 20 working day limit may extend to 40 where the request is complex and voluminous."
+      },
+      {
+        "terms": [
+          "manifestly unfounded",
+          "excessive"
+        ],
+        "law": "UK GDPR Article 12(5); Data Protection Act 2018",
+        "what": "A subject access request that is manifestly unfounded or excessive may be refused or charged for; the controller carries the burden of showing it."
+      }
+    ],
+    "parcel": {},
+    "audit": {}
   }
- },
- "pages": [],
- "evidence_links": "/research/evidence/",
- "copy": {
-  "title": "That Old Chestnut · FOI and EIR replies · Cedwyn",
-  "description": "FOI and EIR replies about Great House Farm / Tŷ Mawr. The register records wording about request scope, searches, refusal grounds and later disclosures, with reply dates and statutory references.",
-  "i18n": {
-   "en": {
-    "h1": "That Old Chestnut",
-    "kicker": "FOI and EIR replies about Great House Farm / Tŷ Mawr",
-    "lede": "This register records FOI and EIR replies about Great House Farm / Tŷ Mawr from 2025 onwards. Entries identify wording about the scope of a request, searches, refusal grounds and later disclosures. Each entry gives the relevant quotation, reply date and statutory provision cited or relevant.",
-    "counts": "Cases by category",
-    "clear": "Later records located",
-    "clear_d": "An initial 'not held' response was followed by the identification or disclosure of records.",
-    "borderline": "Partial or limited response",
-    "borderline_d": "Partial disclosure, material already public, or scope treated as narrower than requested.",
-    "language": "Wording only",
-    "language_d": "Wording examined without a later record location or disclosure recorded.",
-    "filters": "Filter entries",
-    "institution": "Public body",
-    "class": "Category",
-    "trigger": "Earlier reply or event",
-    "all": "All entries",
-    "search": "Search replies",
-    "cards": "Individual replies",
-    "table": "Comparison table",
-    "terms": "Terms quoted and provisions cited",
-    "glossary": "Legal reference: refusal grounds",
-    "empty": "No entries are displayed until the correspondence thread has been checked in full.",
-    "in_progress": "This register is incomplete; further correspondence remains to be reviewed.",
-    "open": "Correspondence still open",
-    "neg": "Initial reply",
-    "pos": "Later reply",
-    "terms_used": "Terms quoted",
-    "statute": "Statutory provision",
-    "none": "No matching entries",
-    "held": "Quote omitted pending review",
-    "radar": "Replies are reviewed before being added to this register.",
-    "not_read": "not yet reviewed",
-    "unread": "Review complete. {n} recent messages have not yet been checked; they will be added if they change the register.",
-    "coverage": "Reviewed: {c} conversations, {m} messages and {r} replies received.",
-    "word_h": "Term of interest",
-    "not_cited": "The reply did not cite this provision, provide a cost or time estimate, or offer advice and assistance."
-   },
-   "cy": {
-    "h1": "Yr Hen Dric",
-    "kicker": "Atebion Rhyddid Gwybodaeth a Rheoliadau Gwybodaeth Amgylcheddol am Great House Farm / Tŷ Mawr",
-    "lede": "Mae'r gofrestr hon yn cofnodi atebion i geisiadau Rhyddid Gwybodaeth ac i geisiadau o dan y Rheoliadau Gwybodaeth Amgylcheddol am Great House Farm / Tŷ Mawr ers 2025. Mae'r cofnodion yn nodi geiriad am gwmpas cais, chwiliadau, seiliau gwrthod a datgeliadau diweddarach. Nodir y dyfyniad perthnasol, dyddiad yr ateb a'r ddarpariaeth statudol a ddyfynnwyd neu sy'n berthnasol ym mhob cofnod.",
-    "counts": "Achosion yn ôl categori",
-    "clear": "Cofnodion a leolwyd yn ddiweddarach",
-    "clear_d": "Dilynwyd ateb cychwynnol 'heb ei gadw' gan ganfod neu ddatgelu cofnodion.",
-    "borderline": "Ateb rhannol neu gyfyngedig",
-    "borderline_d": "Datgeliad rhannol, deunydd a oedd eisoes yn gyhoeddus, neu gwmpas a ddehonglwyd yn gulach na'r cais.",
-    "language": "Geiriad yn unig",
-    "language_d": "Geiriad a archwiliwyd heb gofnod o ganfod neu ddatgelu cofnodion yn ddiweddarach.",
-    "filters": "Hidlo cofnodion",
-    "institution": "Corff cyhoeddus",
-    "class": "Categori",
-    "trigger": "Ateb neu ddigwyddiad blaenorol",
-    "all": "Pob cofnod",
-    "search": "Chwilio'r atebion",
-    "cards": "Atebion unigol",
-    "table": "Tabl cymharu",
-    "terms": "Termau a ddyfynnwyd a darpariaethau a nodwyd",
-    "glossary": "Cyfeirnod cyfreithiol: seiliau gwrthod",
-    "empty": "Ni ddangosir cofnod nes bod yr edefyn gohebiaeth wedi'i wirio'n llawn.",
-    "in_progress": "Nid yw'r gofrestr hon yn gyflawn; mae gohebiaeth arall i'w hadolygu.",
-    "open": "Gohebiaeth yn dal ar agor",
-    "neg": "Ateb cychwynnol",
-    "pos": "Ateb diweddarach",
-    "terms_used": "Termau a ddyfynnwyd",
-    "statute": "Darpariaeth statudol",
-    "none": "Dim cofnodion cyfatebol",
-    "held": "Dyfyniad wedi'i hepgor hyd nes ei adolygu",
-    "radar": "Adolygir atebion cyn eu hychwanegu at y gofrestr hon.",
-    "not_read": "heb ei adolygu eto",
-    "unread": "Adolygiad wedi'i gwblhau. Nid yw {n} o negeseuon diweddar wedi'u gwirio eto; cânt eu hychwanegu os ydynt yn newid y gofrestr.",
-    "coverage": "Adolygwyd: {c} sgwrs, {m} neges a {r} ateb a dderbyniwyd.",
-    "word_h": "Term dan sylw",
-    "not_cited": "Ni ddyfynnodd yr ateb y ddarpariaeth hon, ni roddodd amcangyfrif o gost nac amser, ac ni chynigiodd gyngor a chymorth."
-   },
-   "es": {
-    "h1": "El truco de siempre",
-    "kicker": "Respuestas FOI y EIR sobre Great House Farm / Tŷ Mawr",
-    "lede": "Este registro reúne las respuestas a solicitudes FOI y EIR sobre Great House Farm / Tŷ Mawr desde 2025. Las entradas identifican el texto relativo al alcance de la solicitud, las búsquedas, los motivos de denegación y las divulgaciones posteriores. Cada entrada indica la cita pertinente, la fecha de respuesta y la disposición legal citada o aplicable.",
-    "counts": "Casos por categoría",
-    "clear": "Documentos localizados posteriormente",
-    "clear_d": "A una respuesta inicial de «no consta» le siguió la localización o divulgación de documentos.",
-    "borderline": "Respuesta parcial o limitada",
-    "borderline_d": "Divulgación parcial, material ya público o una interpretación del alcance más limitada que la solicitud.",
-    "language": "Solo el texto de la respuesta",
-    "language_d": "Se examina la redacción, sin que conste una localización o divulgación posterior de documentos.",
-    "filters": "Filtrar entradas",
-    "institution": "Organismo público",
-    "class": "Categoría",
-    "trigger": "Respuesta o hecho anterior",
-    "all": "Todas las entradas",
-    "search": "Buscar respuestas",
-    "cards": "Respuestas individuales",
-    "table": "Tabla comparativa",
-    "terms": "Términos citados y disposiciones mencionadas",
-    "glossary": "Referencia legal: motivos de denegación",
-    "empty": "No se muestra ninguna entrada hasta que se haya revisado por completo el hilo de correspondencia.",
-    "in_progress": "Este registro está incompleto; queda correspondencia por revisar.",
-    "open": "Correspondencia aún abierta",
-    "neg": "Respuesta inicial",
-    "pos": "Respuesta posterior",
-    "terms_used": "Términos citados",
-    "statute": "Disposición legal",
-    "none": "No hay entradas coincidentes",
-    "held": "Cita omitida hasta su revisión",
-    "radar": "Las respuestas se revisan antes de incorporarlas a este registro.",
-    "not_read": "aún sin revisar",
-    "unread": "Revisión completada. Quedan {n} mensajes recientes sin comprobar; se añadirán si modifican el registro.",
-    "coverage": "Revisado: {c} conversaciones, {m} mensajes y {r} respuestas recibidas.",
-    "word_h": "Término de interés",
-    "not_cited": "La respuesta no citó esta disposición, no facilitó una estimación de coste o tiempo ni ofreció asesoramiento y ayuda."
-   }
-  },
-  "columns": [
-   "Public body / recipient",
-   "Date of initial adverse reply",
-   "Time to later disclosure (months; requester emails / total later emails)",
-   "Material identified or disclosed later",
-   "Relevant features of the correspondence (delay, scope, searches, interpretation, refusal grounds or changes between replies)"
-  ],
-  "statutes": [
-   {
-    "terms": [
-     "vexatious",
-     "obsessive",
-     "harassing",
-     "grossly oppressive",
-     "disproportionate"
-    ],
-    "law": "Freedom of Information Act 2000, s.14(1)",
-    "what": "A public authority need not comply with a request that is vexatious (ICO guidance: dealing with vexatious requests)."
-   },
-   {
-    "terms": [
-     "repeated",
-     "identical or substantially similar",
-     "previously answered"
-    ],
-    "law": "Freedom of Information Act 2000, s.14(2)",
-    "what": "A repeated request need not be answered unless a reasonable interval has passed."
-   },
-   {
-    "terms": [
-     "manifestly unreasonable",
-     "onerous",
-     "burdensome",
-     "unreasonable diversion of resources"
-    ],
-    "law": "Environmental Information Regulations 2004, reg 12(4)(b)",
-    "what": "Environmental information may be withheld where the request is manifestly unreasonable, subject to the public interest test (ICO guidance: manifestly unreasonable requests)."
-   },
-   {
-    "terms": [
-     "appropriate limit",
-     "cost limit",
-     "18 hours",
-     "24 hours",
-     "exceed the cost"
-    ],
-    "law": "Freedom of Information Act 2000, s.12, with the Fees Regulations 2004",
-    "what": "No duty to comply where the estimated cost exceeds the appropriate limit (£450, about 18 hours, for local and other public bodies; £600 for central government)."
-   },
-   {
-    "terms": [
-     "not held",
-     "does not hold",
-     "no information",
-     "no records",
-     "nothing found"
-    ],
-    "law": "Freedom of Information Act 2000, s.1(1)(a); Environmental Information Regulations 2004, reg 12(4)(a)",
-    "what": "The authority states it does not hold the information. The search behind that answer must be reasonable and proportionate (ICO guidance on determining whether information is held)."
-   },
-   {
-    "terms": [
-     "too general",
-     "too wide",
-     "clarify",
-     "clarification"
-    ],
-    "law": "Freedom of Information Act 2000, s.1(3) and s.16; Environmental Information Regulations 2004, reg 9 and reg 12(4)(c)",
-    "what": "An authority may seek clarification; the 20 working day clock waits for it. The duty to give advice and assistance sits alongside."
-   },
-   {
-    "terms": [
-     "already published",
-     "reasonably accessible",
-     "publicly available",
-     "available elsewhere"
-    ],
-    "law": "Freedom of Information Act 2000, s.21; Environmental Information Regulations 2004, reg 6(1)(b)",
-    "what": "Information reasonably accessible by other means is exempt; the authority should say where."
-   },
-   {
-    "terms": [
-     "future publication",
-     "intended for publication"
-    ],
-    "law": "Freedom of Information Act 2000, s.22",
-    "what": "Information held with a view to future publication may be withheld."
-   },
-   {
-    "terms": [
-     "extension",
-     "complex and voluminous",
-     "40 working days"
-    ],
-    "law": "Environmental Information Regulations 2004, reg 7(1)",
-    "what": "The 20 working day limit may extend to 40 where the request is complex and voluminous."
-   },
-   {
-    "terms": [
-     "manifestly unfounded",
-     "excessive"
-    ],
-    "law": "UK GDPR Article 12(5); Data Protection Act 2018",
-    "what": "A subject access request that is manifestly unfounded or excessive may be refused or charged for; the controller carries the burden of showing it."
-   }
-  ],
-  "parcel": {},
-  "audit": {}
- }
 }
