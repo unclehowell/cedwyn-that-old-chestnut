@@ -1,4 +1,4 @@
-# That Old Chestnut — webapp 37 of 59
+# That Old Chestnut — webapp 38 of 59
 
 FOI / EIR / SAR replies about Great House Farm / Tŷ Mawr, read line by line: refusal-setup wording ("chestnuts") and
 "not held" answers that later became records found, each with the statute the wording points at. Served at
@@ -10,9 +10,10 @@ That Old Chestnut is about the wording of replies from 2025 onwards: how request
 
 ## Parcel duty
 Every Cedwyn webapp is one of the estate's 59 land parcels and carries "NN of 59" in its header, linked to the shared
-parcel modal (`/_cedwyn/parcel-modal.js`, on main under `web/_cedwyn/`). This app holds slot **37** in the registry
-`data/site-areas.json` (`serendipity_slot` 37; an editorial index, not a tithe plot number until EV-0215 is checked row by
-row). Its secondary duty is to gather everything about its parcel; that block lives in the view's `copy.parcel` and is what
+parcel modal (`/_cedwyn/parcel-modal.js`, on main under `web/_cedwyn/`). This app holds slot **38** in the registry
+`data/site-areas.json` (`serendipity_slot` 38, "38 = That Old Chestnut, 31 Oct 2026" in its `parcel_label_rule`; slot 37 is
+HubSpot · Task Control). The slot is an editorial index, not a tithe plot number until EV-0215 is checked row by
+row. Its secondary duty is to gather everything about its parcel; that block lives in the view's `copy.parcel` and is what
 the modal shows.
 
 ## How it is built (no AI or paid service at page time)
