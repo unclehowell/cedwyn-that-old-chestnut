@@ -2,6 +2,7 @@
 
 | Version | Date (UTC) | What changed |
 |---|---|---|
+| v0.6.2 | 2026-11-25 | Latest mail: nine records of excuse and refusal-setup wording from replies received 10 to 23 November 2026. Vale of Glamorgan Council (delays put down to the age of the records); Cabinet Office (no coordinating record apparent, with the £600 limit raised but not applied); Welsh Government (an earlier request closed as substantially similar, in the same letter as register entries and a hold on six files marked for destruction); Amgueddfa Cymru / Museum Wales twice (technical difficulties and an extension asked for on the deadline, then delegated authority and no staff identified); The National Archives (internal review of 18 November 2026, including its 20-working-day calculation against its own two dates); Cardiff Council (closed at the enquirer's request); National Library of Wales (an earlier not held answer narrowed, and its own case references corrected); Ministry of Justice (which of two requests is to be withdrawn). Data only, in `public/_ui/latest-mail.a2ui.json`, now v0.3.10 and read through 23 November 2026. Signatory names and contact details withheld. No script change. |
 | v0.6.1 | 2026-11-16 | Replaced loaded introductory copy, scope wording and category labels with neutral descriptions. The entry summaries now distinguish the reply, the recorded sequence and any later disclosure without inferring motive. No records, dates, quotations or classifications changed. |
 | v0.6.0 | 2026-11-11 | Silence: a new kind of tactic, **That old chestnut: aggregating separate FOI requests**. Three dated entries, read from the mailbox on 11 November 2026: Amgueddfa Cymru – Museum Wales (8 September 2026; withdrawn the same day), RCAHMW (29 September and 3 November 2026) and Cardiff Council (11 November 2026). Each entry's status line gives the law: under section 12 of the Freedom of Information Act 2000 and regulation 5 of the Fees Regulations 2004, the cost of separate requests may be added together only where they relate to the same or similar information and arrive within 60 consecutive working days; the Environmental Information Regulations 2004 have no cost limit and no aggregation rule (regulation 12(4)(b) only, with the public interest test). Data in `public/_ui/silence.a2ui.json` (en, cy, es); no script change. |
 | v0.5.0 | 2026-11-05 | Silence: 20 tactic entries added as data, read from the mailbox on 5 Nov 2026: said not received though Gmail Sent shows the email went (2: MP office, Darwin Gray), answers contradicted by the record (2: Cadw, Vale of Glamorgan Council), names or spellings that narrowed the search (5: Cardiff Central Library, The National Archives, Museum Wales, HM Land Registry, Historic England), preservation not confirmed (7: BP, Persimmon Homes, MoJ / HMCTS, Linklaters, Mount Stuart, Hugh James, Cotswold Archaeology) and questions passed elsewhere (4: CPS, Glamorgan Archives, Cadw, Vale Scrutiny). Each entry carries a `status_key`; toc.js reads it for the status line (one line changed). No intro or heading re-added. |
@@ -23,6 +24,15 @@
 ## 24 November 2026 — freshness and interpretation safeguard
 - v0.3.9 clarifies in the live status line that the latest-mail supplement is a static extract through its stated read-through date, not a live inbox or deadline monitor.
 - Pattern flags remain source-check prompts, not findings of motive, concealment, statutory breach or wrongdoing. Verify the complete request/reply thread and later underlying record before classifying an apparent later disclosure.
+
+
+## 0.6.2 — 25 November 2026
+- The latest-mail supplement moves to v0.3.10 and reads through 23 November 2026.
+- Nine records are added, in the same shape as the catalogue: TOC-E08 Vale of Glamorgan Council, TOC-E09 Cabinet Office, TOC-E10 Welsh Government, TOC-E11 and TOC-E12 Amgueddfa Cymru / Museum Wales, TOC-E13 The National Archives, TOC-E14 Cardiff Council, TOC-E15 National Library of Wales, TOC-E16 Ministry of Justice.
+- Each quotes the reply as sent. Where a strength of the reply is also present — the register entries and destruction hold from the Welsh Government, the delegation confirmed by Museum Wales, the relocation list confirmed by The National Archives — it is recorded in the same entry, so an excuse is not separated from what came with it.
+- Cardiff Council's entry is marked closed: the request was withdrawn and the council's reply records closure at the enquirer's request, so it is neither a refusal nor a not held answer.
+- Signatory names, email addresses, phone numbers and web addresses are withheld.
+- The freshness and interpretation safeguard of 24 November 2026 remains in force.
 
 
 ## 0.6.1 — 24 November 2026
