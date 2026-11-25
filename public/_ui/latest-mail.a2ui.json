@@ -1,9 +1,9 @@
 {
   "a2ui": "0.9",
   "surface": "that-old-chestnut-latest-mail",
-  "version": "0.3.9",
-  "note": "That Old Chestnut v0.3.4: replies received after the last full audit (31 Oct 2026), in the same record shape as the chestnuts collection of _db/view.json. toc.js adds a record only when the catalogue does not already carry its id, so the catalogue wins once it holds these rows. Mail read up to 2026-11-02T14:20Z. v0.3.4 adds TOC-E05 (solicitors, reply of 2026-11-02) and TOC-E06 (bp legal team, reply of 2026-10-23): preservation notice, then 'not seen' or no reply, then no preservation undertaking. Staff names and phone numbers withheld. v0.3.7 adds TOC-E07 (Mount Stuart Trust, Bute Collection: automatic reply of 2026-10-15, general external enquiries paused with a review in January 2027). v0.3.8 adds the enquiry dates to TOC-E07: request sent 2026-10-15 23:01:51 UTC, automatic reply 23:02:03 UTC (12 seconds later), follow-ups 2026-10-19 and 2026-10-29, no reply as of 2026-11-03. Freshness safeguard (24 Nov 2026): this is a static extract, not a live inbox or deadline monitor; the full original thread and later record must be checked before interpreting a pattern.",
-  "mail_read_to": "2026-11-02",
+  "version": "0.3.10",
+  "note": "That Old Chestnut latest-mail supplement v0.3.10: replies received after the last full audit (31 Oct 2026), in the same record shape as the chestnuts collection of _db/view.json. toc.js adds a record only when the catalogue does not already carry its id, so the catalogue wins once it holds these rows. Mail read up to 2026-11-23T23:59Z. The supplement keeps TOC-E01 to TOC-E07 (replies of 15 October to 2 November 2026). v0.3.10 adds the excuse-type wording in replies received 10 to 23 November 2026: TOC-E08 Vale of Glamorgan Council (delays put down to the age of the records); TOC-E09 Cabinet Office (not apparent that it holds a coordinating record, with the cost limit raised but not applied); TOC-E10 Welsh Government (an earlier request closed as substantially similar, in the same letter as register entries and a hold on six files marked for destruction); TOC-E11 and TOC-E12 Amgueddfa Cymru / Museum Wales (technical difficulties and an extension asked for on the deadline, then delegated authority and no staff identified); TOC-E13 The National Archives (internal review of 18 November 2026); TOC-E14 Cardiff Council (closed at the enquirer's request); TOC-E15 National Library of Wales (an earlier not-held answer narrowed, and its own case references corrected); TOC-E16 Ministry of Justice (which of two requests is to be withdrawn). Signatory names and contact details withheld. Freshness safeguard (24 Nov 2026): this is a static extract, not a live inbox or deadline monitor; the full original thread and later record must be checked before interpreting a pattern.",
+  "mail_read_to": "2026-11-23",
   "i18n": {
     "en": {
       "mail_to": "Static mailbox extract: replies received up to {d} are included; later correspondence may be missing. This is not a live inbox or deadline monitor. Pattern flags are prompts for source checking, not findings of motive or wrongdoing."
@@ -370,6 +370,504 @@
       },
       "updated": "2026-11-03",
       "date_display": "2026-10-15",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E08",
+      "title": "Vale of Glamorgan Council · reply of 2026-11-10",
+      "date": {
+        "display": "2026-11-10",
+        "sort": "2026-11-10",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Vale of Glamorgan Council",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-10"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Vale of Glamorgan Council",
+        "negative_date": "2026-11-10",
+        "positive_date": "",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "We are working through all your requests, including the internal review. We apologise once again that some are delayed in their response. Unfortunately due to the historic nature of the information you are seeking we have found this to be a bit problematic. Thank you for bearing with us and we shall be in further contact with you as soon as possible.",
+        "positive_quote": "",
+        "positive_nature": "",
+        "trigger": "Case 00211557 and new request 00211721, with an internal review of the council's handling outstanding; the reply of 10 November 2026 answers both under one case reference.",
+        "disclosure_type": "",
+        "conduct": "One reply covers the whole caseload. It apologises that some replies are late, puts the difficulty down to the age of the material, and promises further contact without a date. It does not identify which requests are outstanding, how far behind each one is, or what has been searched, and it does not separate the new request from the internal review it answers in the same message. No statutory clock and no exception is mentioned.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "due to the historic nature of the information you are seeking",
+            "statute": "FOIA s.10(1) / EIR reg 5(2): 20 working days; the age of a record is not a ground for extension, and an EIR reg 7 extension needs complexity and volume notified inside the 20 days",
+            "note": ""
+          },
+          {
+            "term": "a bit problematic",
+            "statute": "FOIA s.16(1) / EIR reg 9: the duty to advise and assist; nothing states what would make the search possible or what the enquirer could narrow",
+            "note": ""
+          },
+          {
+            "term": "working through all your requests, including the internal review",
+            "statute": "FOIA s.1(1) / EIR reg 5(1): each request is answered on its own terms, and an internal review has its own timetable under the s.45 Code of Practice",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": [
+          "The signatory's name is withheld; the role title is given instead."
+        ]
+      },
+      "updated": "2026-11-10",
+      "date_display": "2026-11-10",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E09",
+      "title": "Cabinet Office · reply of 2026-11-10",
+      "date": {
+        "display": "2026-11-10",
+        "sort": "2026-11-10",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Cabinet Office",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-10"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Cabinet Office",
+        "negative_date": "2026-11-10",
+        "positive_date": "",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "We can certainly formally process your request for information under the Freedom of Information Act 2000, although it is not apparent to us that the Cabinet Office would hold: [...] Because of the broadness of this subject matter, we suspect that it would not be possible to determine whether any information within the scope of this request is held within the cost limit of £600 (calculated at £25 per hour). [...] If you are able to be more specific about what you are wanting then we may be able to assist.",
+        "positive_quote": "",
+        "positive_nature": "",
+        "trigger": "Request for any guidance, policy, procedure or central record on how inconsistent replies from different public authorities on the same subject are coordinated or referred between bodies.",
+        "disclosure_type": "",
+        "conduct": "The reply neither confirms nor denies that such a record exists. It states that it is not apparent to the Cabinet Office that it would hold one, raises the £600 cost limit as a suspicion rather than as a decision, and invites a narrower request. No search account is given, no refusal notice is issued and no specific narrower scope is suggested. Because the cost limit is only floated, it carries no right of review, and the question whether any body coordinates such replies is left without a yes or a no.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "it is not apparent to us that the Cabinet Office would hold",
+            "statute": "FOIA s.1(1)(a): the authority must state whether it holds the information, after a search; 'not apparent' is not a held or a not held answer",
+            "note": ""
+          },
+          {
+            "term": "within the cost limit of £600 (calculated at £25 per hour)",
+            "statute": "FOIA s.12(1) and s.17: the limit may be relied on only by a refusal notice that gives the estimate and the advice under s.16",
+            "note": ""
+          },
+          {
+            "term": "If you are able to be more specific about what you are wanting",
+            "statute": "FOIA s.16(1): the duty to advise and assist; the reply does not identify what narrower scope would fit inside the limit",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": []
+      },
+      "updated": "2026-11-10",
+      "date_display": "2026-11-10",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E10",
+      "title": "Welsh Government (Cadw) · reply of 2026-11-16",
+      "date": {
+        "display": "2026-11-16",
+        "sort": "2026-11-16",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Welsh Government (Cadw)",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-16"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Welsh Government (Cadw)",
+        "negative_date": "2026-11-16",
+        "positive_date": "2026-11-16",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "As a result, we consider your requests under ATISN 27589 to be substantially similar to those you previously made under ATISN 27021. [...] no further information is held by Welsh Government on any point contained in your request ATISN 27589.",
+        "positive_quote": "They all date from between 2006-2012 and are all marked for destruction under Welsh Government's Retention Schedules but, in acknowledgement of Part D of this request, this now has now been put on hold.",
+        "positive_nature": "register entries for four named files, and a hold placed on six files marked for destruction",
+        "trigger": "Preservation request of 28 September and 1 October 2026, and a request for the register entry, content dates and current status of the files named in the internal review of ATISN 27021; the section 14(2) refusal of ATISN 27589 was challenged on three points.",
+        "disclosure_type": "later disclosure of register detail and retention status; preservation outcome",
+        "conduct": "Two outcomes arrive in one letter. The earlier request is closed off as substantially similar to one already reviewed, with the enquirer sent to the Information Commissioner rather than to an internal review of that letter. In the same letter the Welsh Government supplies register detail it had not given before: four files with content dates, a retain-permanently value and a status of still held, and six Tir Gofal files dated 2006 to 2012, marked for destruction, whose destruction is now held while the requests remain open. The hold is the preservation outcome the enquirer asked for. The letter does not state what search produced the status of the six files, and its sentence recording the hold repeats a word in the original as sent.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "substantially similar to those you previously made",
+            "statute": "FOIA s.14(2): a repeated request may be refused, but the three new points in ATISN 27589 are then left unanswered, and the letter offers the Information Commissioner's route rather than an internal review of that refusal",
+            "note": ""
+          },
+          {
+            "term": "no further information is held by Welsh Government on any point",
+            "statute": "FOIA s.1(1)(a) and s.16: the answer rests on three earlier emails of 10 July, 29 July and 27 August 2026, not on a fresh search of the records",
+            "note": ""
+          },
+          {
+            "term": "marked for destruction under Welsh Government's Retention Schedules ... put on hold",
+            "statute": "FOIA s.1 / EIR reg 5: a record scheduled for destruction that falls in scope still has to be identified and considered; a hold preserves it and does not answer the request",
+            "note": ""
+          },
+          {
+            "term": "you can ask for an internal review within 40 working days",
+            "statute": "FOIA s.45 Code of Practice Part VI: the review route and its timetable",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": [
+          "The signatory's name is withheld; the role title is given instead."
+        ]
+      },
+      "updated": "2026-11-16",
+      "date_display": "2026-11-16",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E11",
+      "title": "Amgueddfa Cymru / Museum Wales · reply of 2026-11-18",
+      "date": {
+        "display": "2026-11-18",
+        "sort": "2026-11-18",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Amgueddfa Cymru / Museum Wales",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-18"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Amgueddfa Cymru / Museum Wales",
+        "negative_date": "2026-11-18",
+        "positive_date": "",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "In undertaking searches for the information you have requested, we have encountered significant technical difficulties. Due to the volume of archived RCAHMW records held within our systems, identifying and searching the relevant material has proved more complex than anticipated. Attempts to extract information from the archive have also resulted in system stability issues, and our IT team is currently investigating alternative methods of carrying out the searches. As a result, we will not be able to provide a full response by today's deadline. We would therefore be grateful if you would agree to an extension until 2 December 2026",
+        "positive_quote": "",
+        "positive_nature": "",
+        "trigger": "Requests of 19 and 22 October 2026 under references 2026-024, 2026-032 and 2026-036, narrowed to collection and accession records for the c.1880 ironwork find at Great House Farm; this message arrived on the day the response was due.",
+        "disclosure_type": "",
+        "conduct": "The extension is asked for on the deadline, in the message that reports the difficulty: the volume of archived records, and extraction from the archive causing system instability, with the IT team looking for other search methods. It asks for the enquirer's agreement rather than recording an extension taken, and gives 2 December 2026 as the new date. Nothing states what had been searched up to the deadline, and no reason is given why the difficulty could not have been reported earlier. The same thread four hours later records that the extension was authorised under delegated authority.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "we have encountered significant technical difficulties",
+            "statute": "EIR reg 7 / FOIA s.10(3): extra time needs complexity and volume, notified inside the 20 working days; technical difficulty is not itself a ground",
+            "note": ""
+          },
+          {
+            "term": "we would therefore be grateful if you would agree to an extension",
+            "statute": "FOIA s.10(3) / EIR reg 7: an extension is the authority's decision to take and notify, not a matter for the requester's consent; withholding consent does not stop the clock",
+            "note": ""
+          },
+          {
+            "term": "our IT team is currently investigating alternative methods",
+            "statute": "EIR reg 9 / FOIA s.16: the duty to advise and assist; nothing states how the records can be reached in the meantime",
+            "note": ""
+          },
+          {
+            "term": "until 2 December 2026",
+            "statute": "EIR reg 7: an extension must be for a stated period, with the reason given; a date is supplied without tying it to the reg 7 conditions",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": []
+      },
+      "updated": "2026-11-18",
+      "date_display": "2026-11-18",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E12",
+      "title": "Amgueddfa Cymru / Museum Wales · reply of 2026-11-18",
+      "date": {
+        "display": "2026-11-18",
+        "sort": "2026-11-18",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Amgueddfa Cymru / Museum Wales",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-18"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Amgueddfa Cymru / Museum Wales",
+        "negative_date": "2026-11-18",
+        "positive_date": "2026-11-18",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "The organisation does not consider it necessary, for the purposes of administering these requests, to identify individual members of staff involved in their handling.",
+        "positive_quote": "Responsibility for managing and determining Freedom of Information requests, including procedural matters such as extensions of time, sits with the Head of Governance under delegated authority. The extension previously notified in relation to these requests was authorised under that delegated authority. No separate managerial approval was required.",
+        "positive_nature": "the post that holds the authority is named, and the extension is confirmed as authorised",
+        "trigger": "The enquirer's email of 18 November 2026 asking for the name and job title of the member of staff who wrote, whether that person was the case handler or a duty manager, the manager with operational responsibility, and who authorised the extension.",
+        "disclosure_type": "procedural disclosure: the delegation under which the extension was authorised",
+        "conduct": "The reply moves the question from a person to a post. Responsibility for FOI handling and for extensions sits with the Head of Governance under delegated authority, and the extension was authorised under it without separate managerial approval. It then declines to identify individual staff. That answers the authorisation question, which is the part that bears on the extension, and leaves the identity of the individual unanswered by design. It also confirms the requests remain under consideration to the revised deadline.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "sits with the Head of Governance under delegated authority",
+            "statute": "FOIA s.45 Code of Practice: a public authority should say who is responsible for its FOI handling and its reviews; naming a post rather than an officer is consistent with the practice on junior staff",
+            "note": ""
+          },
+          {
+            "term": "does not consider it necessary ... to identify individual members of staff",
+            "statute": "FOIA s.40(2): personal data of staff would be the formal route for withholding names; no exemption and no public interest reasoning is set out",
+            "note": ""
+          },
+          {
+            "term": "No separate managerial approval was required",
+            "statute": "FOIA s.10(3) / EIR reg 7: whether an extension was properly authorised is a separate question from whether the conditions for taking one existed",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": []
+      },
+      "updated": "2026-11-18",
+      "date_display": "2026-11-18",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E13",
+      "title": "The National Archives · internal review of 2026-11-18",
+      "date": {
+        "display": "2026-11-18",
+        "sort": "2026-11-18",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "The National Archives",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-18"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "The National Archives",
+        "negative_date": "2026-11-18",
+        "positive_date": "2026-11-18",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "On 22nd September 2025, this record was included in a list of relocated records supplied to TNA, but we do not hold information on the precise date the relocation occurred. [...] No further information is held using the criteria provided on 13th August 2026.",
+        "positive_quote": "YHL/PO/JO/10/11/2536 forms part of the Parliamentary Archive collection made available at The National Archives between December 2025 and June 2026, following a large-scale relocation project.",
+        "positive_nature": "a dated account of the record's movement into the collection, not a newly located record",
+        "disclosure_type": "the movement of the record and the publication date of its catalogue entry",
+        "trigger": "Request of 13 August 2026 on the existence, provenance, transfer, retention, destruction or disposal of records relating to Ty Mawr / Great House Farm, and the internal review of the reply of 23 September 2026; the review addresses the relocation date of YHL/PO/JO/10/11/2536 and the date of its catalogue entry.",
+        "disclosure_type_extra": "",
+        "conduct": "The review confirms the record's movement. It forms part of the Parliamentary Archive collection made available between December 2025 and June 2026, the moves were managed by Parliament, and the record appeared on a relocation list supplied to The National Archives on 22 September 2025. The review then states that it holds no information on the precise date the relocation happened, and that 20 May 2026 is when the catalogue entry was published. It records that the reply of 23 September 2026 was a refusal notice, treats the later search terms as a new request and closes on the terms supplied in August. It also computes the handling time as 20 working days from receipt on 13 August 2026 to the final response on 23 September 2026; those two dates are just under six calendar weeks apart, and the review does not reconcile the difference. The identity of the reviewing officer is refused on the footing that junior civil servants are not named, and the Information Commissioner's postal address is given.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "included in a list of relocated records supplied to TNA",
+            "statute": "FOIA s.1(1)(a): the holding question is answered, and the review identifies Parliament as the body that managed the moves",
+            "note": ""
+          },
+          {
+            "term": "we do not hold information on the precise date the relocation occurred",
+            "statute": "FOIA s.1(1)(a): a not held answer should follow a search; the review does not state whether a deposit or transfer record was checked",
+            "note": ""
+          },
+          {
+            "term": "this review cannot consider or determine any new requests for information",
+            "statute": "FOIA s.45 Code of Practice Part VI: the review's scope is the original handling, so later search terms fall outside it",
+            "note": ""
+          },
+          {
+            "term": "20 working days",
+            "statute": "FOIA s.10(1): the count runs from receipt; the review's own two dates of 13 August and 23 September 2026 do not produce 20 working days",
+            "note": ""
+          },
+          {
+            "term": "does not disclose the identities of junior civil servants",
+            "statute": "FOIA s.40(2): personal data of staff; the review cites a published policy page rather than the exemption",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": []
+      },
+      "updated": "2026-11-18",
+      "date_display": "2026-11-18",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E14",
+      "title": "Cardiff Council · reply of 2026-11-19",
+      "date": {
+        "display": "2026-11-19",
+        "sort": "2026-11-19",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Cardiff Council",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-19"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Cardiff Council",
+        "negative_date": "2026-11-19",
+        "positive_date": "",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "Your Freedom of Information request regarding from 10 November 2026 EIR about Cardiff Corporation woodland and land records at Llandough / Leckwith, including the 29 March 1961 deed has been closed, as requested. Please submit a new request if you wish to obtain the information.",
+        "positive_quote": "",
+        "positive_nature": "",
+        "trigger": "EIR request FOI26599 about Cardiff Corporation woodland and land records at Llandough and Leckwith, including the 29 March 1961 deed, withdrawn on 19 November 2026.",
+        "disclosure_type": "",
+        "conduct": "The reply is a closure notice, and it records the closure as made at the enquirer's request. It gives no account of any search, states nothing about what had been found before the request was withdrawn, and directs any future enquiry to a new request. Read with the withdrawal it answers, the thread ends the request rather than answering it, so the notice is not a refusal and not a not held answer. The wording also carries a stray word in the original as sent.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "has been closed, as requested",
+            "statute": "FOIA s.1(1) / EIR reg 5(1): a request withdrawn by the requester ends the duty to answer, and no decision is recorded",
+            "note": ""
+          },
+          {
+            "term": "Please submit a new request if you wish to obtain the information",
+            "statute": "FOIA s.16 / EIR reg 9: nothing indicates whether any material was located before closure, so a new request begins from the start",
+            "note": ""
+          }
+        ],
+        "open": false,
+        "held_back": []
+      },
+      "updated": "2026-11-19",
+      "date_display": "2026-11-19",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E15",
+      "title": "National Library of Wales · reply of 2026-11-23",
+      "date": {
+        "display": "2026-11-23",
+        "sort": "2026-11-23",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "National Library of Wales",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-23"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "National Library of Wales",
+        "negative_date": "2026-11-23",
+        "positive_date": "",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "For clarity, where we have previously stated \"information not held\", this related to information regarding the deaccessioning (removal) of these items from NLW. The information never existed since the items have not left NLW since their original accession to the collections. [...] All known item-level information has been provided therefore no further searches were required.",
+        "positive_quote": "Copies of the full catalogue records were not attached as they are publicly available online via the following links (this was an error on our part for which we apologise).",
+        "positive_nature": "a correction and explanation of the earlier not held answer, and the case reference put right",
+        "disclosure_type": "catalogue records; the scope of an earlier not held answer",
+        "trigger": "Request FOI/2026/17 for item-level records of the 1974 Report Wales holdings and for the search record behind earlier not held answers.",
+        "disclosure_type_extra": "",
+        "conduct": "The reply draws the line that the earlier answers left out: not held referred to records of deaccessioning, on the basis that the items have not left the Library, and no separate inspection record was created. It also states that no additional item-level records have been identified, that the correct reference is FOI/2026/17, that the earlier case numbers were administrative errors, and that catalogue records should have been attached. What it does not do is say whether any item-level record of the objects themselves was ever made. An object held but not digitised and a record never created are different things, and the reply answers the second.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "where we have previously stated \"information not held\"",
+            "statute": "FOIA s.1(1)(a) / EIR reg 12(4)(a): a narrowed answer; the reply attributes the earlier one to its scope rather than to a later search",
+            "note": ""
+          },
+          {
+            "term": "The information never existed since the items have not left NLW",
+            "statute": "FOIA s.1: a record never created is a different answer from a record not located, and neither is an exception to disclosure",
+            "note": ""
+          },
+          {
+            "term": "this was an error on our part for which we apologise",
+            "statute": "FOIA s.16 / EIR reg 9: correcting the supply of the catalogue records",
+            "note": ""
+          },
+          {
+            "term": "References to other case numbers in previous correspondence were administrative errors",
+            "statute": "FOIA s.45 Code of Practice: accuracy of case references in correspondence",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": []
+      },
+      "updated": "2026-11-23",
+      "date_display": "2026-11-23",
+      "source_text": "Correspondence held on file (not published)",
+      "evidence_links": []
+    },
+    {
+      "id": "TOC-E16",
+      "title": "Ministry of Justice · reply of 2026-11-23",
+      "date": {
+        "display": "2026-11-23",
+        "sort": "2026-11-23",
+        "precision": "day"
+      },
+      "provenance": {
+        "holder": "Ministry of Justice",
+        "reference": "Correspondence held on file (not published)",
+        "date": "2026-11-23"
+      },
+      "evidence": [],
+      "finding": {
+        "class": "language",
+        "institution": "Ministry of Justice",
+        "negative_date": "2026-11-23",
+        "positive_date": "",
+        "months_elapsed": null,
+        "email_volume": "",
+        "negative_quote": "To ensure we withdraw the correct request, please can you confirm which of the two attached requests of 29 October 2026 you would like to withdraw. Separately, we note that an internal review of reference 260803049 is currently being processed. Please can you confirm if you would like to proceed with this.",
+        "positive_quote": "",
+        "positive_nature": "",
+        "trigger": "Withdrawal sent on 19 November 2026, answered by two questions: which of two requests of 29 October 2026 the withdrawal covers, and whether the internal review is to go on.",
+        "disclosure_type": "",
+        "conduct": "A holding reply with two questions and nothing on the substance. It asks the enquirer to identify which of the two requests of 29 October 2026 is withdrawn, and separately whether the internal review should continue, and gives no date for either answer. The questions are the department's own record-keeping, and the internal review is recorded as being processed without a stated timetable. A role title is given and no individual is named.",
+        "interim_disclosure": "",
+        "terms": [
+          {
+            "term": "please can you confirm which of the two attached requests ... you would like to withdraw",
+            "statute": "FOIA s.1(3) / s.16: clarifying which request a withdrawal covers is not a clarification of scope, so the 20-working-day clock is unaffected",
+            "note": ""
+          },
+          {
+            "term": "an internal review ... is currently being processed",
+            "statute": "FOIA s.45 Code of Practice Part VI: no target date is given for the review's outcome",
+            "note": ""
+          }
+        ],
+        "open": true,
+        "held_back": []
+      },
+      "updated": "2026-11-23",
+      "date_display": "2026-11-23",
       "source_text": "Correspondence held on file (not published)",
       "evidence_links": []
     }
